@@ -32,14 +32,29 @@ function getSquares(nums) {
   function checkIngredients(menu, ingredient) {
     if (menu === undefined) throw new Error("menu is required");
     if (!ingredient) throw new Error("ingredient is required");
-    // Your code here!
+    if (!ingredient) throw new Error("ingredient is required");
+    let ingredientFound = false
+    menu.forEach(function (menuItem) {
+      menuItem.ingredients.forEach(function (menuItemIngredient) {
+        if (menuItemIngredient === ingredient) {
+          ingredientFound = true;
+        }
+      })
+  
+    })
+    return ingredientFound;
   }
+
   
   function duplicateNumbers(arr1, arr2) {
     if (arr1 === undefined) throw new Error("arr1 is required");
     if (arr2 === undefined) throw new Error("arr2 is required");
-    // Your code here!
-  }
+    const tallyArr = arr1.filter(element => arr2.includes(element))
+  tallyArr.sort((a, b) => a - b);
+  const uniqueSet = new Set(tallyArr)
+  const resultArray = [...uniqueSet]
+  return resultArray;
+}
   
   module.exports = {
     getSquares,

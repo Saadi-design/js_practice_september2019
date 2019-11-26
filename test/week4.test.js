@@ -1,166 +1,166 @@
-// const {
-  // findSmallNums,
-  // findNamesBeginningWith,
-  // findVerbs,
-  // getIntegers,
-  // getCities,
-  // getSquareRoots,
-  // findSentencesContaining,
-  // getLongestSides
-// } = require("../challenges/week4");
-// 
-// describe("findSmallNums", () => {
-  // // test("returns an array of numbers smaller than 1", () => {
-    // // expect(findSmallNums([8, 1, 1.3, 0.9, 0.4, -1])).toEqual([0.9, 0.4, -1]);
-    // // expect(findSmallNums([-7, -243])).toEqual([-7, -243]);
-    // expect(findSmallNums([100, 88])).toEqual([]);
-    // expect(findSmallNums([])).toEqual([]);
-  // });
-// });
-// 
-// describe("findNamesBeginningWith", () => {
-  // // test("returns an array of names beginning with the specified character", () => {
-    // // const names = ["Sally", "Dave", "Susan", "Geoff", "Riley", "Sam"];
-    // // expect(findNamesBeginningWith(names, "S")).toEqual([
-      // "Sally",
-      // "Susan",
-      // "Sam"
-    // ]);
-    // // expect(findNamesBeginningWith(names, "D")).toEqual(["Dave"]);
-    // // expect(findNamesBeginningWith(names, "F")).toEqual([]);
-  // });
-// });
-// 
-// describe("findVerbs", () => {
-  // // test("returns an array of words that are considered verbs (because they begin with 'to ')", () => {
-    // const words = [
-      // "to eat",
-      // "fajita",
-      // "mouse",
-      // "to sneak",
-      // "to squeak",
-      // "cheesemonger"
-    // ];
-    // // expect(findVerbs(words)).toEqual(["to eat", "to sneak", "to squeak"]);
-    // // expect(findVerbs(["bottle", "fish", "grain"])).toEqual([]);
-  // });
-// 
-  // // test("does not mistake words that include 'to' elsewhere", () => {
-    // const words = [
-      // "to eat",
-      // "tower",
-      // "monitor",
-      // "to sneak",
-      // "to squeak",
-      // "cheesemonger"
-    // ];
-    // // expect(findVerbs(words)).toEqual(["to eat", "to sneak", "to squeak"]);
-  // });
-// });
-// 
-// describe("getIntegers", () => {
-  // // test("returns an array containing only integers", () => {
-    // const nums = [1, 3.5, 2.1, 1, 4, 9];
-    // expect(getIntegers(nums)).toEqual([1, 1, 4, 9]);
-    // expect(getIntegers([])).toEqual([]);
-    // expect(getIntegers([4.9, 9.33, 12.4])).toEqual([]);
-  // });
-// });
-// 
-// describe("getCities", () => {
-  // // test("returns an array of the cities of each user", () => {
-    // const users = [
-      // {
-        // id: 12,
-        // data: {
-          // city: {
-            // id: 1,
-            // displayName: "MCR"
-          // }
-        // }
-      // },
-      // {
-        // id: 44,
-        // data: {
-          // city: {
-            // id: 4,
-            // displayName: "LVP"
-          // }
-        // }
-      // },
-      // {
-        // id: 5,
-        // data: {
-          // city: {
-            // id: 4,
-            // displayName: "LVP"
-          // }
-        // }
-      // },
-      // {
-        // id: 2,
-        // data: {
-          // city: {
-            // id: 7,
-            // displayName: "GLW"
-          // }
-        // }
-      // }
-    // ];
-    // // expect(getCities(users)).toEqual(["MCR", "LVP", "LVP", "GLW"]);
-  // });
-// });
-// 
-// describe("getSquareRoots", () => {
-  // // test("gets the square root of each number to 2 decimal places", () => {
-    // const nums = [36, 77, 12, 355, 92, 5];
-    // // expect(getSquareRoots(nums)).toEqual([6, 8.77, 3.46, 18.84, 9.59, 2.24]);
-  // });
-// });
-// 
-// describe("findSentencesContaining", () => {
-  // const sentencesAboutPackageJson = [
-    // // "You should specify a license for your package so that people know how they are permitted to use it",
-    // // "The main field is a module ID that is the primary entry point to your program",
-    // // "The repository field should specify the place where your code lives",
-    // // // "The 'scripts' property is a dictionary containing script commands that are run at various times in the lifecycle of your package",
-    // // "Dependencies are specified in a simple object that maps a package name to a version range",
-    // // // "It's best to map these additional items such as a test framework, which is not needed for running your project, in a devDependencies object",
-    // // // "If you plan to publish your package, the most important things in your package.json are the name and version fields as they will be required",
-    // // "If you don’t plan to publish your package, the name and version fields are optional",
-    // // // "Put keywords in it. It's an array of strings. This helps people discover your package as it's listed in npm search",
-    // // // "The bugs field should hold the url to your project’s issue tracker and / or the email address to which issues should be reported."
-  // ];
-// 
-  // // test("returns only the sentences containing the specified string", () => {
-    // expect(
-      // // findSentencesContaining(sentencesAboutPackageJson, "license")
-    // ).toEqual([
-      // // // "You should specify a license for your package so that people know how they are permitted to use it"
-    // ]);
-// 
-    // expect(
-      // // findSentencesContaining(sentencesAboutPackageJson, "binary")
-    // ).toEqual([]);
-  // });
-// 
-  // test("it should not be case sensitive", () => {
-    // expect(
-      // // findSentencesContaining(sentencesAboutPackageJson, "dependencies")
-    // ).toEqual([
-      // // "Dependencies are specified in a simple object that maps a package name to a version range",
-      // // // // "It's best to map these additional items such as a test framework, which is not needed for running your project, in a devDependencies object"
-    // ]);
-  // });
-// });
-// 
-// describe("getLongestSides", () => {
-  // // test("returns the longest side of each set of triangle data", () => {
-    // // const data = [[6, 7, 10], [9, 3, 6], [6, 3, 5], [6, 13, 12], [7, 12, 8]];
-    // // expect(getLongestSides(data)).toEqual([10, 9, 6, 13, 12]);
-// 
-    // // const data2 = [[6, 7, 7], [9, 3, 9], [6, 3, 5], [6, 13, 12], [7, 12, 8]];
-    // // expect(getLongestSides(data2)).toEqual([7, 9, 6, 13, 12]);
-  // });
-// });
-// 
+const {
+  getSquares,
+  camelCaseWords,
+  getTotalSubjects,
+  checkIngredients,
+  duplicateNumbers
+} = require("../challenges/week3");
+
+describe("camelCaseWords", () => {
+  test("camel cases a single word (i.e. no capital letter at beginning)", () => {
+    expect(camelCaseWords(["my"])).toBe("my");
+  });
+
+  test("camel cases two words (i.e. second word is capitalized)", () => {
+    expect(camelCaseWords(["my", "variable"])).toBe("myVariable");
+  });
+
+  test("camel cases two+ words (i.e. all words after 1st are capitalized)", () => {
+    expect(camelCaseWords(["my", "variable"])).toBe("myVariable");
+    expect(camelCaseWords(["my", "variable", "name"])).toBe("myVariableName");
+    expect(camelCaseWords(["is", "unique"])).toBe("isUnique");
+    expect(camelCaseWords(["is", "higher", "than", "min", "number"])).toBe(
+      "isHigherThanMinNumber"
+    );
+  });
+});
+
+describe("getSquares", () => {
+  test("returns an empty array if empty array passed", () => {
+    expect(getSquares([])).toEqual([]);
+  });
+
+  test("returns an array of squares of the original numbers", () => {
+    expect(getSquares([2, 4, 6])).toEqual([4, 16, 36]);
+    expect(getSquares([2, 4, 6, 1])).toEqual([4, 16, 36, 1]);
+    expect(getSquares([2, 3, 6, 7, 12, 4])).toEqual([4, 9, 36, 49, 144, 16]);
+    expect(getSquares([54, 24, 5, 66, 992])).toEqual([
+      2916,
+      576,
+      25,
+      4356,
+      984064
+    ]);
+  });
+});
+
+describe("getTotalSubjects", () => {
+  test("returns 0 if no people have subjects", () => {
+    const people = [
+      { name: "Billy", subjects: [] },
+      { name: "Claude", subjects: [] },
+      { name: "Aneeta", subjects: [] }
+    ];
+    expect(getTotalSubjects(people)).toBe(0);
+  });
+
+  test("returns 1 if 1 person has a subject", () => {
+    const people = [
+      { name: "Billy", subjects: [] },
+      { name: "Claude", subjects: ["chemistry"] },
+      { name: "Aneeta", subjects: [] }
+    ];
+    expect(getTotalSubjects(people)).toBe(1);
+  });
+
+  test("returns the correct number of subjects studied in total for all people", () => {
+    const people = [
+      { name: "Billy", subjects: ["welsh", "spanish"] },
+      { name: "Claude", subjects: ["chemistry", "biology", "music"] },
+      { name: "Aneeta", subjects: ["physics", "maths", "computing", "music"] }
+    ];
+    expect(getTotalSubjects(people)).toBe(9);
+  });
+});
+
+describe("checkIngredients", () => {
+  test("returns false if no menu items include the specified ingredient", () => {
+    const menu = [
+      {
+        name: "tofu fritters",
+        ingredients: ["tofu", "egg yolk", "breadbrumbs", "paprika"]
+      },
+      {
+        name: "black bean curry",
+        ingredients: ["black beans", "garam masala", "rice"]
+      },
+      {
+        name: "chocolate tiffin",
+        ingredients: [
+          "dark chocolate",
+          "egg",
+          "flour",
+          "brown sugar",
+          "vanilla essence"
+        ]
+      },
+      {
+        name: "hummus",
+        ingredients: ["chickpeas", "tahini", "lemon", "garlic", "salt"]
+      }
+    ];
+
+    expect(checkIngredients(menu, "milk")).toBe(false);
+  });
+
+  test("returns true if a menu item includes the specified ingredient", () => {
+    const menu = [
+      {
+        name: "tofu fritters",
+        ingredients: ["tofu", "egg yolk", "breadbrumbs", "paprika"]
+      },
+      {
+        name: "black bean curry",
+        ingredients: ["black beans", "garam masala", "rice"]
+      },
+      {
+        name: "chocolate tiffin",
+        ingredients: [
+          "dark chocolate",
+          "egg",
+          "flour",
+          "brown sugar",
+          "vanilla essence"
+        ]
+      },
+      {
+        name: "hummus",
+        ingredients: ["chickpeas", "tahini", "lemon", "garlic", "salt"]
+      }
+    ];
+
+    expect(checkIngredients(menu, "dark chocolate")).toBe(true);
+  });
+});
+
+describe("duplicateNumbers", () => {
+  test("returns an array of numbers which appear in both arr1 and arr2", () => {
+    let arr1 = [1, 55, 4, 3, 7, 8];
+    let arr2 = [55, 23, 65, 0];
+    expect(duplicateNumbers(arr1, arr2)).toEqual([55]);
+
+    arr1 = [6, 4, 2, 4, 1, 9];
+    arr2 = [1];
+    expect(duplicateNumbers(arr1, arr2)).toEqual([1]);
+  });
+
+  test("returns the duplicate numbers in ascending order", () => {
+    let arr1 = [1, 55, 4, 3, 7, 8];
+    let arr2 = [55, 23, 65, 0, 1];
+    expect(duplicateNumbers(arr1, arr2)).toEqual([1, 55]);
+
+    arr1 = [1, 5, 88, 6, 7, 3, 2];
+    arr2 = [4, 1, 7, 3, 2];
+    expect(duplicateNumbers(arr1, arr2)).toEqual([1, 2, 3, 7]);
+  });
+
+  test("returns each number only once, even if it appears in one array multiple times", () => {
+    let arr1 = [1, 2, 2, 2, 3, 4, 5];
+    let arr2 = [1, 2, 6, 7];
+    expect(duplicateNumbers(arr1, arr2)).toEqual([1, 2]);
+
+    arr1 = [1, 2, 3];
+    arr2 = [3, 3, 3, 4, 5];
+    expect(duplicateNumbers(arr1, arr2)).toEqual([3]);
+  });
+});

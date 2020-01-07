@@ -15,19 +15,25 @@ function getBusNumbers(people) {
 
 function countSheep(arr) {
   if (arr === undefined) throw new Error("arr is required");
-  arr.forEach(function (item) {
-    if (item === "sheep") {
-      total++;
+  let count = 0
+  arr.forEach(function (animal) {
+    if (animal === "sheep") {
+      count = count + 1
     }
   })
-  return total;
+  return count
 }
 
 function hasMPostCode(person) {
   if (person === undefined) throw new Error("person is required");
-  
+  for (let key in person) {
+  if (person.address.city === "Manchester" && person.address.postCode[0] === "M") {
+    return true
+    } else {
+      return false
+      }
+  }
 }
-
 module.exports = {
   getFillings,
   isFromManchester,
